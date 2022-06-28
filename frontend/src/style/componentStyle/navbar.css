@@ -1,0 +1,25 @@
+.nav-container .nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-container .nav-list .link-title {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    background-color: rgb(192, 214, 65);
+    padding: 10px 0;
+    border-right: 2px solid rgb(152, 150, 150);
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-container .nav-list .link-title:hover {
+    background-color:rgb(170, 190, 51) ;
+}
+.nav-container .nav-list .link-title li{
+   
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}

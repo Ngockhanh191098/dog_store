@@ -1,0 +1,31 @@
+.add-dog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background-color: rgb(209, 226, 228);
+    width: 400px;
+    padding: 20px;
+}
+.add-dog-container .form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.add-dog-container .form-group label {
+    display: block;
+}
+.add-dog-container .form-group input,textarea {
+    width: 100%;
+    padding: 8px;
+}
+.add-dog-container button {
+    width: 60%;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(138, 156, 71);
+    font-size: 20px;
+}
+.add-dog-container button:hover{
+    background-color: rgb(189, 214, 97);
+}

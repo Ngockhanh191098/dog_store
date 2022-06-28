@@ -1,0 +1,19 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8d9b3c;
+}
+.footer-container .footer-introduce {
+    width: 400px;
+    padding: 50px 0;
+}
+.footer-container h2{
+    color: #fff;
+}
+.footer-container h4 {
+    color: #fff;
+}
+.footer-container p {
+    color: #fff;
+}

@@ -1,0 +1,91 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: rgb(141, 155, 60);
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header-logo img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.header-logo h2 {
+    font-size: 30px;
+    color: rgb(246, 244, 244);
+}
+.header-search {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.header-search input {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+.header-seach-icon {
+    color: brown;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header-account {
+    position: relative;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-account span {
+    font-size: 25px;
+    color: #fff;
+}
+.header-account span:hover {
+    color: rgb(7, 7, 114);
+}
+.header-account-item {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    border: 1px solid brown;
+    padding: 10px;
+}
+.header-account-item p {
+    font-size: 22px;
+    border-bottom: 1px solid #999;
+}
+.header-account-item p:hover {
+    color:rgb(216, 87, 26);
+}
+.header-cart {
+    position: relative;
+}
+.header-cart .cart-item {
+    font-size: 40px;
+    color: rgb(246, 244, 244);
+    cursor: pointer;
+}
+.header-cart .cart-item:hover {
+    color: brown;
+}
+.header-cart span{
+    padding: 0 5px;
+    position: absolute;
+    background-color: red;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    left: 100%;
+    color: white;
+}

@@ -1,0 +1,15 @@
+.top-head-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(192, 214, 65);
+}
+.facebook-head, .phone-head {
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    margin:5px 20px;
+}
+.facebook-head:hover, .phone-head:hover {
+    color:blue
+}
