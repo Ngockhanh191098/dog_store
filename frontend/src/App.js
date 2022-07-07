@@ -21,7 +21,7 @@ function App() {
   const isLogged = localStorage.getItem('accessToken');
 
   return (
-    <UserContext.Provider value={{isAdmin, setIsAdmin,isLogged}}>
+    <UserContext.Provider value={{isAdmin, setIsAdmin, isLogged}}>
       <Router>
         <TopHead />
         <Header />

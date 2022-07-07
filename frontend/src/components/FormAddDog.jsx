@@ -1,8 +1,10 @@
 import '../style/componentStyle/formAddDog.css'; 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Axios from 'axios';
 
 const FormAddDog = () => {
+    const navigate = useNavigate();
 
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
@@ -14,7 +16,7 @@ const FormAddDog = () => {
         const formData = new FormData();
         formData.append('title', title);
         formData.append('price', price);
-        formData.append('breed', breed)
+        formData.append('breed', breed);
         formData.append('image', image);
         formData.append('description', description);
 
@@ -26,12 +28,19 @@ const FormAddDog = () => {
         }
         )
         .then(res => {
+            setTitle('');
+            setPrice('');
+            setBreed('');
+            setImage(null);
+            setDescription('');
             if(res.status === "403") {
                 alert("You don't permission to post a dog!");
                 return;
             }
-            alert('add dog success!')
+            alert('add dog success!');
+            return navigate('/dog-manager');
         })
+        .catch(err => console.log(err))
     }
     return ( 
         <div className="add-dog-container">

@@ -23,7 +23,7 @@ const DogList = (props) => {
                 })}
             </section>
         </>
-     );
+    );
 }
  
 export default DogList;

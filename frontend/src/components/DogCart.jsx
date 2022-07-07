@@ -3,7 +3,7 @@ import '../style/componentStyle/listDog.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const DogCart = (props) => {
-    const { id, title, price, breed, image, description } = props;
+    const { title, price, breed, image, description } = props;
     return ( 
         <>
             <section className="dog-cart-container">

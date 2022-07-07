@@ -1,0 +1,41 @@
+.dog-manager-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #999;
+}
+.dog-manager-container .dog-img-manager {
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+}
+.dog-manager-container .dog-img-manager img {
+    width: 100px;
+    height: 100px;
+}
+.dog-manager-container .dog-title-manager {
+    width: 150px;
+    margin-left: 40px;
+}
+.dog-manager-container .dog-price-manager {
+    width: 100px;
+    margin-left: 40px;
+}
+.dog-manager-container .dog-breed-manager {
+    width: 150px;
+    margin-left: 40px;
+}
+.dog-manager-container .dog-desc-manager {
+    width: 300px;
+    margin-left: 40px;
+}
+.handle-btn {
+    margin-left: 200px;
+}
+.edit-btn {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.delete-btn {
+    cursor: pointer;
+}
