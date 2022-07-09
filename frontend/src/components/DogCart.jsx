@@ -19,7 +19,7 @@ const DogCart = (props) => {
                     <Link to="/dog-info" className="dog-price">Price: {price} $</Link>
                     <Link to="/dog-info" className="dog-breed">Breed: {breed}</Link>
                 </div>
-                <p className="dog-description">{description}</p>
+                {/* <p className="dog-description">{description}</p> */}
                 <div className="add-buy">
                     <AddShoppingCartIcon className="add-cart" />
                     <button className="buy-now">BUY NOW</button>

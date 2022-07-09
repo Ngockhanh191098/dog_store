@@ -9,12 +9,11 @@ const DogListPage = () => {
     const [count, setCount] = useState(1);
     const [limit, setLimit] = useState(1);
     const [offset, setOffset] = useState(1);
-    // const [page, setPage] = useState(1);
 
     useEffect( () => {
         async function getData() {
             const res = await Axios.get(
-                "http://127.0.0.1:8080/dogs?offset=0&limit=6",{
+                "http://127.0.0.1:8080/dogs?offset=0&limit=8",{
                     headers: {
                     "Content-Type": "application/json",
                     "x-access-token": localStorage.getItem('accessToken')
@@ -31,8 +30,6 @@ const DogListPage = () => {
         });
         getData().catch(err => console.log(err));
     }, [])
-
-    
 
     return ( 
         <>

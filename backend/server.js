@@ -19,6 +19,7 @@ app.use(upload.single("image"));
 require('./routers/auth.router')(app);
 app.use('/dogs',dogRouter);
 
+
 app.listen(SERVER_PORT, () => {
     console.log(`Server is running on port ${SERVER_PORT}...`);
 })

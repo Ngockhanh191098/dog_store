@@ -46,7 +46,6 @@ const getDogsPagination = async (req, res) => {
 
 const deleteDog = async (req, res) => {
     const dogId = req.params;
-    console.log(dogId.id)
     const foundDog = await DogModel.findOne({
         where: {
             id: dogId.id
@@ -68,11 +67,35 @@ const deleteDog = async (req, res) => {
     } catch (error) {
         return res.status(500).json({message: error.message})
     }
+}
+
+// update the dog
+const updateDog = async (req, res) => {
+    const dogId = req.params.id;
+    const updateData = req.body;
+
+    try {
+        const file = req.file;
+        const filename = file.filename;
+
+        const updateDog = await DogModel.update({
+            title: updateData.title,
+            price: updateData.price,
+            breed: updateData.breed,
+            image: filename,
+            description: updateData.description
+        });
+        console.log(updateDog);
+        return res.status(201).json(updateDog);
+    } catch (error) {
+        return res.status(500).json({message: error.message})
+    }
 
 }
 
 module.exports = {
     addNewDog,
     getDogsPagination,
-    deleteDog
+    deleteDog,
+    updateDog
 };
