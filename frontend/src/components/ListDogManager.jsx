@@ -8,14 +8,14 @@ const ListDogManager = () => {
     const navigate = useNavigate();
 
     const [listDog, setListDog] = useState([]);
-    // const [count, setCount] = useState(1);
+    const [count, setCount] = useState(1);
     const [limit, setLimit] = useState(1);
     const [offset, setOffset] = useState(1);
     
     useEffect( () => {
         async function getData() {
             const res = await Axios.get(
-                "http://127.0.0.1:8080/dogs?offset=0&limit=6",{
+                "http://127.0.0.1:8080/dogs?offset=0&limit=10",{
                     headers: {
                     "Content-Type": "application/json",
                     }
@@ -25,7 +25,7 @@ const ListDogManager = () => {
         }
         getData().then(res => {
             setListDog(res.data.rows);
-            // setCount(res.data.count);
+            setCount(res.data.count);
             setLimit(res.data.limit);
             setOffset(res.data.offset);
         });
@@ -55,7 +55,7 @@ const ListDogManager = () => {
                     )
                 })}
             </section>
-            <Pagination limit={limit} offset={offset} setListDog={setListDog} />
+            <Pagination limit={limit} offset={offset} setListDog={setListDog} count={count}/>
             <button onClick={redirectAddDog} style={{width: "100%", padding: "10px", margin: "30px 0"}}>ADD DOG</button>
 
         </>

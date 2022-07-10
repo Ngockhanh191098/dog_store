@@ -1,11 +1,12 @@
 import DogCart from "./DogCart";
 import '../style/componentStyle/listDog.css';
+import ListDogNav from "./ListDogNav";
 
 const DogList = (props) => {
     const {listDog} = props;
     return ( 
         <>
-            <h2 style={{textAlign:"center",margin:"30px"}}>List Dogs</h2>
+            <ListDogNav />
             <section className="doglist-container">
                 {listDog.map((dog) => {
                     return (
