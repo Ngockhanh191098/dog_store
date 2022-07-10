@@ -8,7 +8,7 @@ const FormAddDog = () => {
 
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
-    const [breed, setBreed] = useState('');
+    const [breed, setBreed] = useState('Pug');
     const [image, setImage] = useState(null);
     const [description, setDescription] = useState('');
     
@@ -55,7 +55,14 @@ const FormAddDog = () => {
             </div>
             <div className="form-group">
                 <label>Breed</label>
-                <input type='text' onChange={(e) => setBreed(e.target.value)}/>
+                <select name="breed" onChange={(e) => setBreed(e.target.value)}>
+                    <option value="Pug">Pug</option>
+                    <option value="Puddle">Puddle</option>
+                    <option value="Corgy">Corgy</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Pit Bull">Pit Bull</option>
+                    <option value="Husky">Husky</option>
+                </select>
             </div>
             <div className="form-group">
                 <label>Image</label>

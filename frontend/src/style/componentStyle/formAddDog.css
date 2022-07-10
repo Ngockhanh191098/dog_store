@@ -29,3 +29,7 @@
 .add-dog-container button:hover{
     background-color: rgb(189, 214, 97);
 }
+select {
+    width: 100%;
+    padding: 10px;
+}

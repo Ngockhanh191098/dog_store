@@ -13,6 +13,7 @@ import NavbarLogged from './components/NavbarLogged';
 import Navbar from './components/Navbar';
 import { useState } from 'react';
 import UserContext from './Contexts/UserContext';
+import UpdateDog from './pages/UpdateDog';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='/dog-manager' element={<DogManager />} />
             <Route path='/add-dog' element={<AddDog />} />
             <Route path='/dogpage' element={<DogListPage />} />
+            <Route path='/update-dogpage' element={<UpdateDog />} />
         </Routes>
         <Footer />
       </Router>

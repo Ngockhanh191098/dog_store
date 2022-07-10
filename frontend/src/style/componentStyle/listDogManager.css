@@ -14,15 +14,15 @@
     height: 100px;
 }
 .dog-manager-container .dog-title-manager {
-    width: 150px;
-    margin-left: 40px;
+    width: 250px;
+    margin-left: 80px;
 }
 .dog-manager-container .dog-price-manager {
-    width: 100px;
+    width: 250px;
     margin-left: 40px;
 }
 .dog-manager-container .dog-breed-manager {
-    width: 150px;
+    width: 250px;
     margin-left: 40px;
 }
 .dog-manager-container .dog-desc-manager {
@@ -35,6 +35,7 @@
 .edit-btn {
     margin-right: 20px;
     cursor: pointer;
+    color: black;
 }
 .delete-btn {
     cursor: pointer;
